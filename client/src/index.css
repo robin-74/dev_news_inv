@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slide2 {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  *{
+    
+  }
+  .sliding-title {
+    display: inline-block;
+    animation: slide 2s infinite;
+  }
+  @keyframes slide-once {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(1000);
+    }
+  }
+  
+  .sliding-news {
+    display: inline-block;
+    animation: slide-once 2s ease-in-out 1;
+  }
+  
